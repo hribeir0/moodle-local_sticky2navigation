@@ -23,16 +23,15 @@ namespace local_sticky2navigation\local\hooks\output;
  * @copyright  2025 Hugo Ribeiro <hugo@moodlar.pt>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class before_standard_head_html_generation
-{
+class before_standard_head_html_generation {
+
 
     /**
      * Callback allowing to add to <head> of the page
      *
      * @param \core\hook\output\before_standard_head_html_generation $hook
      */
-    public static function callback(\core\hook\output\before_standard_head_html_generation $hook): void
-    {
+    public static function callback(\core\hook\output\before_standard_head_html_generation $hook): void {
 
         if (during_initial_install() || isset($CFG->upgraderunning)) {
             // Do nothing during installation or upgrade.

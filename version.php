@@ -26,7 +26,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_sticky2navigation';
 $plugin->release = '1.0';
-$plugin->version = 2025041903;
+$plugin->version = 2025042100;
 $plugin->requires = 2024042200.00;
-$plugin->supported = [404, 405, 500];
-$plugin->maturity = MATURITY_STABLE;
+$plugin->supported = [405, 500];
+// // $plugin->maturity = MATURITY_STABLE;
